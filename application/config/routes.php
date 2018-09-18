@@ -54,21 +54,9 @@ $route['404_override'] 			= '';
 $route['translate_uri_dashes'] 	= FALSE;
 
 $route['index'] 				= 'C_Index';
-$route['login'] 				= 'C_Index/login';
-$route['register'] 				= 'C_Index/register';
+$route['about'] 				= 'C_Index/about';
+$route['login_register'] 		= 'C_Index/login_register';
 $route['logout']				= 'C_Index/logout';
-
-// Jurnal Harian
-$route['daftar_jurnal'] 					= 'C_Jurnal';
-$route['daftar_jurnal/index']				= 'C_Jurnal/daftar_index';
-$route['daftar_jurnal/create']				= 'C_Jurnal/daftar_create';
-$route['daftar_jurnal/update/(:any)']		= 'C_Jurnal/daftar_update/$1';
-$route['daftar_jurnal/delete']				= 'C_Jurnal/daftar_delete';
-$route['daftar_jurnal/read/(:any)']			= 'C_Jurnal/daftar_read/$1';
-
-
-$route['export_jurnal'] 		= 'C_Jurnal/export_index';
-
-// Laporan
-$route['laporan_bab3']						= 	'C_Laporan/bab3';
-$route['laporan_bab3_modification']			=	'C_Laporan/bab3_modification';
+$route['manage_event']			= 'C_Index/manage_event';
+$route['manage_event_2']		= 'C_Index/manage_event_2';
+$route['dashboard_tracking']	= 'C_Index/dashboard_tracking';
