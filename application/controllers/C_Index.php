@@ -26,12 +26,33 @@ class C_Index extends CI_Controller
 		$this->load->library('session');
 		$this->load->library('form_validation');
 		$this->load->model('M_Index');
+		$this->load->helper('url');
 	}
 
 	public function index()
 	{
 
-		$this->load->view('template/index');
+		$this->load->view('index');
+	}
+	public function login_register()
+	{
+
+		$this->load->view('login_register');
+	}
+	public function manage_event()
+	{
+
+		$this->load->view('manage_event');
+	}
+	public function manage_event_2()
+	{
+
+		$this->load->view('manage_event_2');
+	}
+	public function dashboard_tracking()
+	{
+
+		$this->load->view('dashboard_tracking');
 	}
 
 }
